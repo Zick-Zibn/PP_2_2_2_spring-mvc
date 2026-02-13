@@ -1,8 +1,5 @@
 package web.model;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Car {
     private String brand;
     private String model;
@@ -40,10 +37,6 @@ public class Car {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public String getHeader() {
-        return "Brand/" + ' ' + "Model/" + ' ' + "Color";
     }
 
     public String toStringFormatted() {
