@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Car {
-    private static String header = "Brand/" + ' ' + "Model/" + ' ' + "Color";
     private String brand;
     private String model;
     private String color;
@@ -44,7 +43,7 @@ public class Car {
     }
 
     public String getHeader() {
-        return header;
+        return "Brand/" + ' ' + "Model/" + ' ' + "Color";
     }
 
     public String toStringFormatted() {

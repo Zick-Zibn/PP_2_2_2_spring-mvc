@@ -10,10 +10,11 @@ import web.service.CarService;
 
 @Controller
 public class CarController {
+
     private final Car car;
     private final CarService carService;
 
-    @Autowired
+
     public CarController(CarService carService, Car car) {
         this.carService = carService;
         this.car = car;
